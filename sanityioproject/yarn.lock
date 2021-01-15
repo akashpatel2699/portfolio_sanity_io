@@ -949,7 +949,7 @@
     get-random-values "^1.2.0"
     lodash "^4.17.15"
 
-"@sanity/client@2.1.4":
+"@sanity/client@2.1.4", "@sanity/client@^2.1.4":
   version "2.1.4"
   resolved "https://registry.npmjs.org/@sanity/client/-/client-2.1.4.tgz#89f64d4ec706b6c9e70605c2249677c22cab984e"
   dependencies:
