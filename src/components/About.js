@@ -29,7 +29,7 @@ const About = () => {
       {bio &&
         bio.map((profile) => (
           <div className="p-10 lg:pt-48 container mx-auto relative">
-            <section className=" bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+            <section className=" bg-green-800 rounded-lg shadow-2xl lg:flex p-20 animate-bounce-in">
               <img
                 src={profile.profileImage.asset.url}
                 alt={profile.name}

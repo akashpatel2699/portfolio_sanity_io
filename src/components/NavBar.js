@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import sanityClient from "../client";
 
 const NavBar = () => {
+  const [name, setName] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "profile"]{
+      name,
+    }`
+      )
+      .then((data) => setName(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <header className="bg-red-600">
       <div className="container mx-auto flex justify-between">
-        <h2 className="inline-flex items-center py-3 px-3 my-6 rounded text-red-20 italic">
-          Akash Patel
-        </h2>
+        {name ? (
+          <NavLink to="/">
+            <h2 className="animate-fade-in inline-flex items-center py-3 px-3 my-6 rounded text-red-20 italic">
+              Akash Patel
+            </h2>
+          </NavLink>
+        ) : (
+          <h2>""</h2>
+        )}
         <nav className="flex">
           <NavLink
             to="/"

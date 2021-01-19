@@ -21,11 +21,13 @@ const Contact = () => {
   return (
     <main className="min-h-screen p-12">
       <section className="container ">
-        <h1 className="text-5xl font-bold flex justify-center">My Contact</h1>
+        <h1 className="text-4xl font-bold flex justify-center cursive">
+          My Contact
+        </h1>
         {profile ? (
           profile.map((each, index) => (
             <section
-              className="flex flex-col w-full h-full items-center mt-5"
+              className="flex flex-col w-full h-full items-center mt-5 animate-bounce-in "
               key={index}
             >
               <h1 className="text-8xl font-bold cursive">{each.name}</h1>

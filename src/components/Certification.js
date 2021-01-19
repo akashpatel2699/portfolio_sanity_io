@@ -36,8 +36,8 @@ const Certification = () => {
         {certification ? (
           certification.map((cert, index) => (
             <section className="grid grid-cols-3  gap-8" key={index}>
-              <article className="flex flex-col items-center rounded-lg shadow-xl transition-shadow bg-white p-16 hover:shadow-2xl">
-                <h3 className=" flex flex-inline text-gray-800 text-4xl font-bold mb-2 cursive">
+              <article className="flex flex-col items-center rounded-lg shadow-xl transition-shadow bg-white p-16 hover:shadow-2xl animate-fade-in">
+                <h3 className=" flex flex-inline text-gray-800 text-5xl font-bold mb-2 cursive">
                   {cert.badgeLink ? (
                     <a
                       href={cert.badgeLink}
