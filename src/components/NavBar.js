@@ -20,14 +20,12 @@ const NavBar = () => {
   return (
     <header className="bg-red-600">
       <div className="container mx-auto flex justify-between">
-        {name ? (
+        {name && (
           <NavLink to="/">
             <h2 className="animate-fade-in inline-flex items-center py-3 px-3 my-6 rounded text-red-20 italic">
               {name[0].name}
             </h2>
           </NavLink>
-        ) : (
-          <h2></h2>
         )}
         <nav className="flex">
           <NavLink
