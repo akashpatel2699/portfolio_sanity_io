@@ -23,46 +23,46 @@ const NavBar = () => {
         {name ? (
           <NavLink to="/">
             <h2 className="animate-fade-in inline-flex items-center py-3 px-3 my-6 rounded text-red-20 italic">
-              Akash Patel
+              {name[0].name}
             </h2>
           </NavLink>
         ) : (
-          <h2>""</h2>
+          <h2></h2>
         )}
         <nav className="flex">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest transition-color"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
           >
             About Me!
           </NavLink>
           <NavLink
             to="/project"
-            activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
           >
             Projects
           </NavLink>
           <NavLink
             to="/certification"
-            activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
           >
             Certifications
           </NavLink>
           <NavLink
             to="/contact"
-            activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
           >
             Contact
           </NavLink>
