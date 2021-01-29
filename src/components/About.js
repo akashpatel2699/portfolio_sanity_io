@@ -6,6 +6,7 @@ const About = () => {
   const [bio, setBio] = useState(null);
 
   useEffect(() => {
+	console.log(process.env.REACT_APP_SANITY_PROJECT_ID)
     sanityClient
       .fetch(
         `*[_type == "profile"]{
@@ -27,8 +28,8 @@ const About = () => {
   return (
     <main className="min-h-screen p-12">
       {bio &&
-        bio.map((profile) => (
-          <div className="p-10 lg:pt-48 container mx-auto relative">
+        bio.map((profile,index) => (
+          <div className="p-10 lg:pt-48 container mx-auto relative" key={index}>
             <section className=" bg-green-800 rounded-lg shadow-2xl lg:flex p-20 animate-bounce-in">
               <img
                 src={profile.profileImage.asset.url}
