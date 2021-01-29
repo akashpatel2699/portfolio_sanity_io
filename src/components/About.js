@@ -6,7 +6,6 @@ const About = () => {
   const [bio, setBio] = useState(null);
 
   useEffect(() => {
-	console.log(process.env.REACT_APP_SANITY_PROJECT_ID)
     sanityClient
       .fetch(
         `*[_type == "profile"]{
