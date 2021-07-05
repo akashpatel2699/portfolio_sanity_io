@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Jobs from "./components/Jobs";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Certification from "./components/Certification";
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route component={Home} path="/" exact />
         <Route component={About} path="/about" />
+        <Route component={Jobs} path="/jobs" />
         <Route component={Project} path="/project" />
         <Route component={Certification} path="/certification" />
         <Route component={Contact} path="/contact" />

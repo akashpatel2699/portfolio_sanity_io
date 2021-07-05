@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
+import jobs from "./jobs";
 import project from "./project";
 import profile from "./Profile";
 import certification from "./certification";
@@ -19,6 +20,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    jobs,
     project,
     profile,
     certification,

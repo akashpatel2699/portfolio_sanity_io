@@ -44,6 +44,13 @@ const NavBar = () => {
             About Me!
           </NavLink>
           <NavLink
+            to="/jobs"
+            activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
+          >
+            Jobs
+          </NavLink>
+          <NavLink
             to="/project"
             activeClassName="text-red-100 bg-red-700 border-b-2 border-red-100"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800 transition-all duration-300"
